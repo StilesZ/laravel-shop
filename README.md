@@ -69,3 +69,11 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 > - php artisan db:seed //导入数据
 > - php artisan key:generate //APP_KEY
 
+## composer 安装组件
+> 安装JWT token认证
+> - composer require tymon/jwt-auth
+> - php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider" // 生成config/jwt.php文件
+> - php artisan jwt:secret // 生成 JWT_SECRET
+> - 修改user Models
+> - 修改config auth.gurad
+
